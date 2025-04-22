@@ -1,0 +1,539 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2024-03-20",
+    "description": "CRUI - PP3"
+  },
+  "students": [
+    {
+      "id": "STU001",
+      "personalInfo": {
+        "firstName": "María",
+        "lastName": "González",
+        "email": "maria.gonzalez@example.com",
+        "phone": "+54 9 11 1234-5678",
+        "location": "Buenos Aires, Argentina",
+        "birthDate": "2000-05-15"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "group": "A",
+        "averageGrade": 8.5,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "2021-03-01",
+        "expectedGraduation": "2024-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["JavaScript", "Python", "Java"],
+        "frameworks": ["React", "Node.js", "Spring Boot"],
+        "databases": ["MongoDB", "PostgreSQL"],
+        "tools": ["Git", "Docker", "VS Code"]
+      },
+      "projects": [
+        {
+          "name": "Sistema de Gestión Académica",
+          "description": "Desarrollo de una aplicación web para gestión de calificaciones",
+          "technologies": ["React", "Node.js", "MongoDB"],
+          "role": "Frontend Developer",
+          "duration": "6 meses"
+        }
+      ],
+      "internships": [
+        {
+          "company": "Tech Solutions SA",
+          "position": "Desarrollador Junior",
+          "startDate": "2023-01-15",
+          "endDate": "2023-07-15",
+          "responsibilities": [
+            "Desarrollo de componentes React",
+            "Mantenimiento de APIs REST",
+            "Testing de aplicaciones"
+          ]
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Developer",
+          "issuer": "Amazon Web Services",
+          "date": "2023-06-01",
+          "validUntil": "2026-06-01"
+        }
+      ],
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Avanzado",
+          "certification": "TOEFL 95"
+        }
+      ]
+    },
+    {
+      "id": "STU002",
+      "personalInfo": {
+        "firstName": "Juan",
+        "lastName": "Martínez",
+        "email": "juan.martinez@example.com",
+        "phone": "+54 9 11 2345-6789",
+        "location": "Córdoba, Argentina",
+        "birthDate": "1999-08-22"
+      },
+      "academicInfo": {
+        "currentYear": 2,
+        "group": "B",
+        "averageGrade": 7.8,
+        "specialization": "Inteligencia Artificial",
+        "enrollmentDate": "2022-03-01",
+        "expectedGraduation": "2025-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["Python", "R", "C++"],
+        "frameworks": ["TensorFlow", "PyTorch", "Scikit-learn"],
+        "databases": ["MySQL", "SQLite"],
+        "tools": ["Jupyter Notebook", "Git", "Docker"]
+      },
+      "projects": [
+        {
+          "name": "Sistema de Reconocimiento Facial",
+          "description": "Implementación de un sistema de reconocimiento facial usando Python y OpenCV",
+          "technologies": ["Python", "OpenCV", "TensorFlow"],
+          "role": "Machine Learning Engineer",
+          "duration": "4 meses"
+        }
+      ],
+      "internships": [
+        {
+          "company": "AI Research Lab",
+          "position": "Research Intern",
+          "startDate": "2023-03-01",
+          "endDate": "2023-09-01",
+          "responsibilities": [
+            "Análisis de datos",
+            "Implementación de algoritmos de ML",
+            "Documentación de resultados"
+          ]
+        }
+      ],
+      "certifications": [
+        {
+          "name": "TensorFlow Developer Certificate",
+          "issuer": "Google",
+          "date": "2023-04-15",
+          "validUntil": "2026-04-15"
+        }
+      ],
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Intermedio",
+          "certification": "IELTS 6.5"
+        }
+      ]
+    },
+    {
+      "id": "STU003",
+      "personalInfo": {
+        "firstName": "Ana",
+        "lastName": "Rodríguez",
+        "email": "ana.rodriguez@example.com",
+        "phone": "+54 9 11 3456-7890",
+        "location": "Mendoza, Argentina",
+        "birthDate": "2001-03-10"
+      },
+      "academicInfo": {
+        "currentYear": 1,
+        "group": "A",
+        "averageGrade": 9.2,
+        "specialization": "Ciberseguridad",
+        "enrollmentDate": "2023-03-01",
+        "expectedGraduation": "2026-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["Python", "Bash", "C"],
+        "frameworks": ["Metasploit", "Wireshark", "Nmap"],
+        "databases": ["PostgreSQL", "Redis"],
+        "tools": ["Kali Linux", "Burp Suite", "Git"]
+      },
+      "projects": [
+        {
+          "name": "Análisis de Vulnerabilidades Web",
+          "description": "Desarrollo de herramientas para análisis de seguridad web",
+          "technologies": ["Python", "Bash", "OWASP ZAP"],
+          "role": "Security Analyst",
+          "duration": "3 meses"
+        }
+      ],
+      "internships": [
+        {
+          "company": "Secure Systems Inc",
+          "position": "Security Intern",
+          "startDate": "2023-06-01",
+          "endDate": "2023-12-01",
+          "responsibilities": [
+            "Análisis de vulnerabilidades",
+            "Pruebas de penetración",
+            "Documentación de hallazgos"
+          ]
+        }
+      ],
+      "certifications": [
+        {
+          "name": "CompTIA Security+",
+          "issuer": "CompTIA",
+          "date": "2023-05-20",
+          "validUntil": "2026-05-20"
+        }
+      ],
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Avanzado",
+          "certification": "TOEFL 100"
+        }
+      ]
+    },
+    {
+      "id": "STU004",
+      "personalInfo": {
+        "firstName": "Carlos",
+        "lastName": "López",
+        "email": "carlos.lopez@example.com",
+        "phone": "+54 9 11 4567-8901",
+        "location": "Rosario, Argentina",
+        "birthDate": "2000-11-30"
+      },
+      "academicInfo": {
+        "currentYear": 2,
+        "group": "B",
+        "averageGrade": 8.9,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "2022-03-01",
+        "expectedGraduation": "2025-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["Java", "Python", "C#"],
+        "frameworks": ["Spring Boot", "Django", ".NET"],
+        "databases": ["MySQL", "SQL Server"],
+        "tools": ["Git", "Jenkins", "IntelliJ IDEA"]
+      },
+      "projects": [
+        {
+          "name": "Sistema de Reservas",
+          "description": "Desarrollo de un sistema de reservas para hoteles",
+          "technologies": ["Java", "Spring Boot", "MySQL"],
+          "role": "Backend Developer",
+          "duration": "5 meses"
+        }
+      ],
+      "internships": [
+        {
+          "company": "Software Solutions",
+          "position": "Java Developer Intern",
+          "startDate": "2023-02-01",
+          "endDate": "2023-08-01",
+          "responsibilities": [
+            "Desarrollo de APIs REST",
+            "Optimización de consultas SQL",
+            "Implementación de microservicios"
+          ]
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Oracle Certified Professional",
+          "issuer": "Oracle",
+          "date": "2023-03-15",
+          "validUntil": "2026-03-15"
+        }
+      ],
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Avanzado",
+          "certification": "TOEFL 98"
+        }
+      ]
+    },
+    {
+      "id": "STU005",
+      "personalInfo": {
+        "firstName": "Laura",
+        "lastName": "Fernández",
+        "email": "laura.fernandez@example.com",
+        "phone": "+54 9 11 5678-9012",
+        "location": "Tucumán, Argentina",
+        "birthDate": "2001-04-25"
+      },
+      "academicInfo": {
+        "currentYear": 1,
+        "group": "C",
+        "averageGrade": 9.1,
+        "specialization": "Inteligencia Artificial",
+        "enrollmentDate": "2023-03-01",
+        "expectedGraduation": "2026-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["Python", "R", "Julia"],
+        "frameworks": ["PyTorch", "Keras", "Scikit-learn"],
+        "databases": ["MongoDB", "PostgreSQL"],
+        "tools": ["Jupyter", "Tableau", "Git"]
+      },
+      "projects": [
+        {
+          "name": "Predicción de Series Temporales",
+          "description": "Modelo de predicción para series temporales financieras",
+          "technologies": ["Python", "TensorFlow", "Pandas"],
+          "role": "Data Scientist",
+          "duration": "4 meses"
+        }
+      ],
+      "internships": [
+        {
+          "company": "Data Analytics Corp",
+          "position": "Data Science Intern",
+          "startDate": "2023-04-01",
+          "endDate": "2023-10-01",
+          "responsibilities": [
+            "Análisis de datos",
+            "Desarrollo de modelos predictivos",
+            "Visualización de datos"
+          ]
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Data Science Professional Certificate",
+          "issuer": "IBM",
+          "date": "2023-05-10",
+          "validUntil": "2026-05-10"
+        }
+      ],
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Avanzado",
+          "certification": "IELTS 7.5"
+        }
+      ]
+    },
+    {
+      "id": "STU006",
+      "personalInfo": {
+        "firstName": "Diego",
+        "lastName": "Silva",
+        "email": "diego.silva@example.com",
+        "phone": "+54 9 11 6789-0123",
+        "location": "Mar del Plata, Argentina",
+        "birthDate": "2000-07-12"
+      },
+      "academicInfo": {
+        "currentYear": 2,
+        "group": "C",
+        "averageGrade": 8.7,
+        "specialization": "Desarrollo Web",
+        "enrollmentDate": "2022-03-01",
+        "expectedGraduation": "2025-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["JavaScript", "TypeScript", "PHP"],
+        "frameworks": ["React", "Vue.js", "Laravel"],
+        "databases": ["MySQL", "MongoDB"],
+        "tools": ["Git", "Docker", "VS Code", "Postman"]
+      },
+      "projects": [
+        {
+          "name": "E-commerce Platform",
+          "description": "Desarrollo de una plataforma de comercio electrónico con sistema de pagos integrado",
+          "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+          "role": "Full Stack Developer",
+          "duration": "8 meses"
+        }
+      ],
+      "internships": [
+        {
+          "company": "Web Solutions Inc",
+          "position": "Web Developer Intern",
+          "startDate": "2023-03-01",
+          "endDate": "2023-09-01",
+          "responsibilities": [
+            "Desarrollo de componentes React",
+            "Integración de APIs",
+            "Optimización de rendimiento"
+          ]
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Full Stack Web Developer",
+          "issuer": "Udemy",
+          "date": "2023-02-15",
+          "validUntil": "2026-02-15"
+        }
+      ],
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Avanzado",
+          "certification": "TOEFL 92"
+        }
+      ]
+    },
+    {
+      "id": "STU007",
+      "personalInfo": {
+        "firstName": "Valentina",
+        "lastName": "Ríos",
+        "email": "valentina.rios@example.com",
+        "phone": "+54 9 11 7890-1234",
+        "location": "Salta, Argentina",
+        "birthDate": "2001-01-30"
+      },
+      "academicInfo": {
+        "currentYear": 1,
+        "group": "A",
+        "averageGrade": 9.0,
+        "specialization": "UX/UI Design",
+        "enrollmentDate": "2023-03-01",
+        "expectedGraduation": "2026-12-15"
+      },
+      "skills": {
+        "design": ["Figma", "Adobe XD", "Sketch"],
+        "frontend": ["HTML", "CSS", "JavaScript"],
+        "tools": ["Git", "Jira", "Trello"],
+        "methodologies": ["Design Thinking", "Agile", "Scrum"]
+      },
+      "projects": [
+        {
+          "name": "Rediseño de Aplicación Móvil",
+          "description": "Rediseño completo de la experiencia de usuario de una aplicación bancaria",
+          "technologies": ["Figma", "Adobe XD", "User Testing"],
+          "role": "UX/UI Designer",
+          "duration": "6 meses"
+        }
+      ],
+      "internships": [
+        {
+          "company": "Digital Design Studio",
+          "position": "UX Design Intern",
+          "startDate": "2023-05-01",
+          "endDate": "2023-11-01",
+          "responsibilities": [
+            "Investigación de usuarios",
+            "Creación de wireframes",
+            "Pruebas de usabilidad"
+          ]
+        }
+      ],
+      "certifications": [
+        {
+          "name": "UX Design Professional",
+          "issuer": "Google",
+          "date": "2023-04-20",
+          "validUntil": "2026-04-20"
+        }
+      ],
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Avanzado",
+          "certification": "IELTS 7.0"
+        }
+      ]
+    }
+  ],
+  "teams": [
+    {
+      "id": "TEAM001",
+      "name": "Equipo 1",
+      "members": ["STU001", "STU002"],
+      "project": {
+        "name": "Sistema de Gestión Académica",
+        "description": "Plataforma integral para la gestión de calificaciones, asistencia y comunicación entre docentes y estudiantes",
+        "technologies": ["React", "Node.js", "MongoDB", "Express"],
+        "status": "En desarrollo",
+        "startDate": "2024-01-15",
+        "expectedEndDate": "2024-07-15",
+        "progress": 45
+      }
+    },
+    {
+      "id": "TEAM002",
+      "name": "Equipo 2",
+      "members": ["STU003", "STU006"],
+      "project": {
+        "name": "Plataforma de E-learning",
+        "description": "Sistema de aprendizaje en línea con soporte para cursos interactivos y evaluaciones automáticas",
+        "technologies": ["Vue.js", "Python", "PostgreSQL", "Django"],
+        "status": "En desarrollo",
+        "startDate": "2024-02-01",
+        "expectedEndDate": "2024-08-01",
+        "progress": 30
+      }
+    },
+    {
+      "id": "TEAM003",
+      "name": "Equipo 3",
+      "members": ["STU004", "STU005", "STU007"],
+      "project": {
+        "name": "Aplicación Móvil de Salud",
+        "description": "App para seguimiento de hábitos saludables y conexión con profesionales de la salud",
+        "technologies": ["React Native", "Firebase", "Node.js", "MongoDB"],
+        "status": "En desarrollo",
+        "startDate": "2024-03-01",
+        "expectedEndDate": "2024-09-01",
+        "progress": 20
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "PRO001",
+      "team_id": "TEAM001",
+      "name": "Sistema de Gestión Académica",
+      "description": "Desarrollo de una aplicación web para gestión de calificaciones",
+      "technologies": ["React", "Node.js", "MongoDB"],
+      "duration": "12 meses",
+      "history": [
+        {
+          "date": "2023-01-01",
+          "description": "Inicio del proyecto",
+          "status": "Iniciado",
+          "time_spent": "100 horas"
+        },
+        {
+          "date": "2023-02-01",
+          "description": "Desarrollo de la interfaz de usuario",
+          "status": "En progreso",
+          "time_spent": "50 horas"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "teams-dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard para visualización de equipos y estudiantes",
+  "author": "John Galt",
+  "scripts": {
+    "start": "http-server -c-1"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
