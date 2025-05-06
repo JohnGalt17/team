@@ -975,7 +975,9 @@
       "expectedEndDate": "2025-12-01",
       "duration": "8 meses",
       "progress": 45,
-      "offerer": ["La empresa"],
+      "offerer": [
+        "Se estan buscando oferentes dentro de la red de contactos del CRUI"
+      ],
       "stakeHolders": [
         "persona1",
         "persona2",
