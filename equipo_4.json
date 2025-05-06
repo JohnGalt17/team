@@ -1,0 +1,248 @@
+{
+  "metadata": {
+    "version": "2.0.0",
+    "lastUpdated": "2025-04-23",
+    "description": "CRUI - PP3"
+  },
+  "students": [
+    {
+      "id": "STU016",
+      "personalInfo": {
+        "firstName": "Santiago",
+        "lastName": "Villanueva",
+        "email": "santiago@sharktech.com.ar",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "2022-03-01",
+        "expectedGraduation": "2024-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["Typescript", "JavaScript", "Python", "PHP"],
+        "frameworks": ["Laravel", "NestJs", "Angular", "Next.js"],
+        "databases": ["MySQL", "PostgreSQL", "MongoDB", "DynamoDB"],
+        "tools": ["Git", "VS Code", "AWS", "Firebase", "Vercel", "Notion"],
+        "soft": [
+          "Trabajo en equipo",
+          "Resolución de problemas",
+          "Adaptabilidad",
+          "Aprendizaje continuo"
+        ]
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU017",
+      "personalInfo": {
+        "firstName": "Daiana",
+        "lastName": "Rodriguez",
+        "email": "daiana@sharktech.com.ar",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "2022-03-01",
+        "expectedGraduation": "2024-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["JavaScript", "Python", "Java", "C"],
+        "frameworks": ["Laravel", "Node.js"],
+        "databases": ["MySQL", "SQL Server"],
+        "tools": ["Git", "Jira", "VS Code"],
+        "soft": [
+          "Adaptabilidad",
+          "Orientacion a desafios",
+          "Trabajo en equipo",
+          "Resolución de problemas"
+        ]
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Intermedio",
+          "certification": "First Certificate"
+        }
+      ]
+    },
+    {
+      "id": "STU018",
+      "personalInfo": {
+        "firstName": "Lourdes",
+        "lastName": "Helman",
+        "email": "lourdes@sharktech.com.ar",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "2022-03-01",
+        "expectedGraduation": "2024-12-15"
+      },
+      "skills": {
+        "programmingLanguages": [
+          "JavaScript",
+          "Python",
+          "Java",
+          "C",
+          "TypeScript"
+        ],
+        "frameworks": ["Laravel", "Node.js", "Express", "React"],
+        "databases": ["MySQL", "SQL Server", "MongoDB"],
+        "tools": ["Git", "Jira", "VS Code", "Filezilla", "Postman"],
+        "soft": [
+          "Resolución de conflictos",
+          "Versatilidad entre roles",
+          "Adaptabilidad",
+          "Mediadora de equipo",
+          "Trabajo colaborativo",
+          "Orientación a desafíos"
+        ]
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Intermedio",
+          "certification": "First Certificate"
+        }
+      ]
+    },
+    {
+      "id": "STU019",
+      "personalInfo": {
+        "firstName": "Paula",
+        "lastName": "Martínez Farías",
+        "email": "paula@sharktech.com.ar",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "2022-03-01",
+        "expectedGraduation": "2024-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["JavaScript", "Python", "Java", "C", "PHP"],
+        "frameworks": ["Laravel", "Node.js"],
+        "databases": ["MySQL", "SQL Server"],
+        "tools": ["Git", "Jira", "VS Code", "Filezilla"],
+        "soft": [
+          "Autonomía",
+          "Gestión del tiempo",
+          "Pensamiento analítico",
+          "Mentalidad de mejora contínua"
+        ]
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Intermedio",
+          "certification": "First Certificate"
+        }
+      ]
+    },
+
+    {
+      "id": "STU020",
+      "personalInfo": {
+        "firstName": "Jorge",
+        "lastName": "Marinoni",
+        "email": "jorge@sharktech.com.ar",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "2022-03-01",
+        "expectedGraduation": "2024-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["JavaScript", "Python", "Java", "C"],
+        "frameworks": ["Laravel", "Node.js"],
+        "databases": ["MySQL", "SQL Server"],
+        "tools": ["Git", "Jira", "VS Code", "Filezilla"],
+        "soft": [
+          "Proactivo",
+          "Buena oratoria",
+          "Trabajo en equipo",
+          "Resolución de problemas"
+        ]
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Intermedio",
+          "certification": "First Certificate"
+        }
+      ]
+    }
+  ],
+  "teams": [
+    {
+      "id": "TEAM004",
+      "name": "Sharktech",
+      "members": ["STU016", "STU017", "STU018", "STU019", "STU020"],
+      "project_id": "PRO004"
+    }
+  ],
+  "projects": [
+    {
+      "id": "PRO004",
+      "team_id": "TEAM004",
+      "name": "MiMap",
+      "description": "Mapa Interactivo para desplegar la matriz comercial y productiva del municipio de Ituzaingó",
+      "technologies": ["React", "Inertia", "Laravel", "MySQL"],
+      "status": "Fase 1 - Completada | Fase 2 - En relevamiento",
+      "startDate": "2025-05-04",
+      "expectedEndDate": "2025-11-28",
+      "duration": "7 meses",
+      "progress": 50,
+      "offerer": [
+        "Secretaría de Desarrollo Productivo del Municipio de Ituzaingó"
+      ],
+      "stakeHolders": [
+        "Lic.Natalia Lazeri",
+        "Lic.Marcela Buyo",
+        "Lic.Verónica Corbalán"
+      ],
+
+      "history": [
+        {
+          "date": "2024-05-17",
+          "description": "Fase 1",
+          "status": "Terminada",
+          "time_spent": "350 horas"
+        },
+        {
+          "date": "2025-05-04",
+          "description": "Fase 2",
+          "status": "En relevamiento",
+          "time_spent": "0 horas"
+        }
+      ]
+    }
+  ]
+}

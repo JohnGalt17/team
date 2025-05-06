@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard de Estudiantes - GitHub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <style>
+      :root {
+        --primary-color: #2b2d42;
+        --secondary-color: #8d99ae;
+        --accent-color: #ef233c;
+        --light-color: #edf2f4;
+        --dark-color: #2b2d42;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--light-color);
+        color: var(--dark-color);
+      }
+
+      .navbar {
+        background-color: var(--primary-color);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-brand {
+        color: var(--light-color) !important;
+        font-weight: bold;
+      }
+
+      .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+        margin-bottom: 20px;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card-header {
+        background-color: var(--primary-color);
+        color: var(--light-color);
+        border-radius: 10px 10px 0 0 !important;
+        padding: 15px;
+      }
+
+      .student-card {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      }
+
+      .student-info {
+        margin-bottom: 15px;
+      }
+
+      .student-name {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--primary-color);
+        margin-bottom: 5px;
+      }
+
+      .student-details {
+        color: var(--secondary-color);
+        font-size: 0.9rem;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .social-links a {
+        color: var(--primary-color);
+        font-size: 1.2rem;
+        transition: color 0.2s;
+      }
+
+      .social-links a:hover {
+        color: var(--accent-color);
+      }
+
+      .github-icon {
+        color: #333;
+      }
+
+      .email-icon {
+        color: #ea4335;
+      }
+
+      .stats-card {
+        background: linear-gradient(
+          135deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .stats-number {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      .stats-label {
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+
+      .search-box {
+        margin-bottom: 20px;
+      }
+
+      .search-box input {
+        border-radius: 20px;
+        padding: 10px 20px;
+        border: 1px solid var(--secondary-color);
+      }
+
+      .search-box input:focus {
+        box-shadow: none;
+        border-color: var(--accent-color);
+      }
+
+      .nav-tabs .nav-link {
+        color: var(--primary-color);
+        border: none;
+        padding: 10px 20px;
+        margin-right: 5px;
+        border-radius: 5px;
+      }
+
+      .nav-tabs .nav-link.active {
+        background-color: var(--primary-color);
+        color: white;
+      }
+
+      .team-card {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      }
+
+      .team-name {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--primary-color);
+        margin-bottom: 10px;
+      }
+
+      .team-members {
+        margin-top: 15px;
+      }
+
+      .team-member {
+        display: inline-block;
+        background-color: var(--light-color);
+        padding: 5px 10px;
+        border-radius: 15px;
+        margin: 2px;
+        font-size: 0.9rem;
+      }
+
+      .project-card {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      }
+
+      .project-name {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--primary-color);
+        margin-bottom: 10px;
+      }
+
+      .project-description {
+        color: var(--secondary-color);
+        margin-bottom: 15px;
+      }
+
+      .project-tech {
+        display: inline-block;
+        background-color: var(--light-color);
+        padding: 5px 10px;
+        border-radius: 15px;
+        margin: 2px;
+        font-size: 0.9rem;
+      }
+
+      .project-progress {
+        margin-top: 15px;
+      }
+
+      .progress {
+        height: 10px;
+        border-radius: 5px;
+      }
+
+      .tab-content {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-github me-2"></i>
+          Dashboard de Estudiantes
+        </a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Metadata Section -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="mb-0">Información del Dataset</h5>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-4">
+                  <p><strong>Versión:</strong> <span id="version"></span></p>
+                </div>
+                <div class="col-md-4">
+                  <p>
+                    <strong>Última actualización:</strong>
+                    <span id="lastUpdated"></span>
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <p>
+                    <strong>Descripción:</strong> <span id="description"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="stats-card">
+            <div class="stats-number" id="totalStudents">0</div>
+            <div class="stats-label">Total de Estudiantes</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="stats-card">
+            <div class="stats-number" id="totalTeams">0</div>
+            <div class="stats-label">Equipos</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="stats-card">
+            <div class="stats-number" id="totalProjects">0</div>
+            <div class="stats-label">Proyectos</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <ul class="nav nav-tabs" id="dashboardTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="students-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#students"
+            type="button"
+            role="tab"
+          >
+            <i class="bi bi-people me-2"></i>Estudiantes
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="teams-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#teams"
+            type="button"
+            role="tab"
+          >
+            <i class="bi bi-diagram-3 me-2"></i>Equipos
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="projects-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#projects"
+            type="button"
+            role="tab"
+          >
+            <i class="bi bi-kanban me-2"></i>Proyectos
+          </button>
+        </li>
+      </ul>
+
+      <!-- Tab Content -->
+      <div class="tab-content" id="dashboardTabsContent">
+        <!-- Students Tab -->
+        <div class="tab-pane fade show active" id="students" role="tabpanel">
+          <div class="row mb-4">
+            <div class="col-12">
+              <div class="search-box">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="searchInput"
+                  placeholder="Buscar estudiante..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row" id="studentsGrid">
+            <!-- Students will be dynamically inserted here -->
+          </div>
+        </div>
+
+        <!-- Teams Tab -->
+        <div class="tab-pane fade" id="teams" role="tabpanel">
+          <div class="row mb-4">
+            <div class="col-12">
+              <div class="search-box">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="teamSearchInput"
+                  placeholder="Buscar equipo..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row" id="teamsGrid">
+            <!-- Teams will be dynamically inserted here -->
+          </div>
+        </div>
+
+        <!-- Projects Tab -->
+        <div class="tab-pane fade" id="projects" role="tabpanel">
+          <div class="row mb-4">
+            <div class="col-12">
+              <div class="search-box">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="projectSearchInput"
+                  placeholder="Buscar proyecto..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row" id="projectsGrid">
+            <!-- Projects will be dynamically inserted here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Data as a JavaScript object
+      const jsonData = {
+        metadata: {
+          version: "2.0.0",
+          lastUpdated: "2025-04-23",
+          description: "CRUI - PP3",
+        },
+        students: [
+          {
+            id: "STU001",
+            personalInfo: {
+              firstName: "Eduardo",
+              lastName: "Soto",
+              email: "eduardojosesotouzcategui@gmail.com",
+              githubEmail: "eduardojosesotouzcategui@gmail.com",
+              githubUsername: "EjsuMD",
+              githubUrl: "https://github.com/EjsuMD",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU002",
+            personalInfo: {
+              firstName: "Franco",
+              lastName: "Balella",
+              email: "FranBalella@Hotmail.com.ar",
+              githubEmail: "FranBalella@Hotmail.com",
+              githubUsername: "FMB-Player",
+              githubUrl: "https://github.com/FMB-Player",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU003",
+            personalInfo: {
+              firstName: "Lucas",
+              lastName: "Muñoz",
+              email: "juanchotomas.rasen@gmail.com",
+              githubEmail: "juanchotomas.rasen@gmail.com",
+              githubUsername: "lucas2004x",
+              githubUrl: "https://github.com/lucas2004x",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU004",
+            personalInfo: {
+              firstName: "Fabio",
+              lastName: "Gomez",
+              email: "gomezsecundariatecnica@gmail.com",
+              githubEmail: "gomezsecundariatecnica@gmail.com",
+              githubUsername: "Estudiantel",
+              githubUrl: "https://github.com/Estudiantel",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU005",
+            personalInfo: {
+              firstName: "Brandon",
+              lastName: "Ayaviri",
+              email: "brandonayaviri5@gmail.com",
+              githubEmail: "brandonayaviri5@gmail.com",
+              githubUsername: "Bran404",
+              githubUrl: "https://github.com/Bran404",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU006",
+            personalInfo: {
+              firstName: "Ariana",
+              lastName: "Ruiz",
+              email: "arianarz268@gmail.com",
+              githubEmail: "arianarz268@gmail.com",
+              githubUsername: "arydotwav",
+              githubUrl: "https://github.com/arydotwav",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU007",
+            personalInfo: {
+              firstName: "Agustin",
+              lastName: "Scklink",
+              email: "adrielscklink@gmail.com",
+              githubEmail: "adrielscklink@gmail.com",
+              githubUsername: "Agus402",
+              githubUrl: "https://github.com/Agus402",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU008",
+            personalInfo: {
+              firstName: "Aldana",
+              lastName: "Velazquez",
+              email: "Aldyvel5@gmail.com",
+              githubEmail: "Aldyvel5@gmail.com",
+              githubUsername: "Aldy0810",
+              githubUrl: "https://github.com/Aldy0810",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU009",
+            personalInfo: {
+              firstName: "Sebastian",
+              lastName: "Dipietro",
+              email: "sebasdp01@gmail.com",
+              githubEmail: "sebasdp01@gmail.com",
+              githubUsername: "sebasdp22",
+              githubUrl: "https://github.com/sebasdp22",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU010",
+            personalInfo: {
+              firstName: "Ignacio",
+              lastName: "Trota",
+              email: "nachotrotta81@gmail.com",
+              githubEmail: "nachotrotta81@gmail.com",
+              githubUsername: "Ignacio-Trottaa",
+              githubUrl: "https://github.com/Ignacio-Trottaa",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU011",
+            personalInfo: {
+              firstName: "Sebastian",
+              lastName: "Mussi",
+              email: "sebamussi.dev@hotmail.com",
+              githubEmail: "sebasmussi",
+              githubUsername: "SebasM79",
+              githubUrl: "https://github.com/SebasM79",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU012",
+            personalInfo: {
+              firstName: "Rocio",
+              lastName: "Lujan",
+              email: "rociolujanceleste26@gmail.com",
+              githubEmail: "rociolujanceleste@gmail.com",
+              githubUsername: "RocioLujan",
+              githubUrl: "https://github.com/RocioLujan",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU013",
+            personalInfo: {
+              firstName: "Ricardo",
+              lastName: "Ortiz",
+              email: "ricjard890@gmail.com",
+              githubEmail: "ricardo_ortiz@hotmail.com.ar",
+              githubUsername: "RicardoJOrtiz",
+              githubUrl: "https://github.com/RicardoJOrtiz",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU014",
+            personalInfo: {
+              firstName: "Francisco",
+              lastName: "Castellano",
+              email: "francastellano1510@gmail.com",
+              githubEmail: "francastellano1510@gmail.com",
+              githubUsername: "frqn04",
+              githubUrl: "https://github.com/frqn04",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU015",
+            personalInfo: {
+              firstName: "Lucas",
+              lastName: "Godina",
+              email: "lucasgodina@gmail.com",
+              githubEmail: "lucasgodina@gmail.com",
+              githubUsername: "lucasgodina",
+              githubUrl: "https://github.com/lucasgodina",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU016",
+            personalInfo: {
+              firstName: "Santiago",
+              lastName: "Villanueva",
+              email: "santiago@sharktech.com.ar",
+              githubEmail: "santiago@sharktech.com.ar",
+              githubUsername: "santiagoarielv98",
+              githubUrl: "https://github.com/santiagoarielv98",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU017",
+            personalInfo: {
+              firstName: "Daiana",
+              lastName: "Rodriguez",
+              email: "daynosolro@gmail.com",
+              githubEmail: "daynosolro@gmail.com",
+              githubUsername: "daynosolro",
+              githubUrl: "https://github.com/daynosolro",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU018",
+            personalInfo: {
+              firstName: "Lourdes",
+              lastName: "Helman",
+              email: "helmanlour@gmail.com",
+              githubEmail: "helmanlour@gmail.com",
+              githubUsername: "Lourdes2023",
+              githubUrl: "https://github.com/Lourdes2023",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU019",
+            personalInfo: {
+              firstName: "Paula",
+              lastName: "Martinez Farias",
+              email: "pauumf.89@gmail.com",
+              githubEmail: "pauumf.89@gmail.com",
+              githubUsername: "paumf23",
+              githubUrl: "https://github.com/paumf23",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU020",
+            personalInfo: {
+              firstName: "Jorge",
+              lastName: "Marinoni",
+              email: "jorge@sharktech.com.ar",
+              githubEmail: "jorge@sharktech.com.ar",
+              githubUsername: "deejaygenius",
+              githubUrl: "https://github.com/deejaygenius",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU021",
+            personalInfo: {
+              firstName: "Jorgelina",
+              lastName: "Galeano",
+              email: "Jmcyjg@gmail.com",
+              githubEmail: "Jmcyjg@gmail.com",
+              githubUsername: "jorgelinaju",
+              githubUrl: "https://github.com/jorgelinaju",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU022",
+            personalInfo: {
+              firstName: "Camila",
+              lastName: "Sarmiento",
+              email: "qaamilaa774@gmail.com",
+              githubEmail: "qaamilaa774@gmail.com",
+              githubUsername: "SarmientoCamila",
+              githubUrl: "https://github.com/SarmientoCamila",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU023",
+            personalInfo: {
+              firstName: "Jazmin",
+              lastName: "Maez",
+              email: "maezjazmin@gmail.com",
+              githubEmail: "maezjazmin@gmail.com",
+              githubUsername: "jazzzz0",
+              githubUrl: "https://github.com/jazzzz0",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+          {
+            id: "STU024",
+            personalInfo: {
+              firstName: "Yamila",
+              lastName: "Morais",
+              email: "moraisyamila@gmail.com",
+              githubEmail: "moraisyamila@gmail.com",
+              githubUsername: "chamufem",
+              githubUrl: "https://github.com/chamufem",
+              location: "Buenos Aires, Argentina",
+            },
+          },
+        ],
+        teams: [
+          {
+            id: "TEAM001",
+            name: "Gaming",
+            members: ["STU001", "STU002", "STU003", "STU004", "STU005"],
+            project_id: "PRO001",
+          },
+          {
+            id: "TEAM002",
+            name: "Hebenum",
+            members: ["STU006", "STU007", "STU008", "STU009", "STU010"],
+            project_id: "PRO002",
+          },
+          {
+            id: "TEAM003",
+            name: "Pucara Gaming",
+            members: ["STU011", "STU012", "STU013", "STU014", "STU015"],
+            project_id: "PRO003",
+          },
+          {
+            id: "TEAM004",
+            name: "Sharktech",
+            members: ["STU016", "STU017", "STU018", "STU019", "STU020"],
+            project_id: "PRO004",
+          },
+          {
+            id: "TEAM005",
+            name: "FocusApp",
+            members: ["STU021", "STU022", "STU023", "STU024"],
+            project_id: "PRO005",
+          },
+        ],
+        projects: [
+          {
+            id: "PRO001",
+            team_id: "TEAM001",
+            name: "Gaming",
+            description:
+              "Plataforma web|mobile para aprender jugando, con un enfoque en la gamificacion y la motivacion.",
+            technologies: [],
+            status: "En desarrollo",
+            startDate: "",
+            expectedEndDate: "",
+            progress: 0,
+          },
+          {
+            id: "PRO002",
+            team_id: "TEAM002",
+            name: "Hebenum",
+            description:
+              "Plataforma web relacionada a la gestion academica de alumnos, materias y profesores, con foco en resolver problematicas que se encuentran en la misma institucion.",
+            technologies: ["Java"],
+            status: "En desarrollo",
+            startDate: "",
+            expectedEndDate: "",
+            progress: 0,
+          },
+          {
+            id: "PRO003",
+            team_id: "TEAM003",
+            name: "Pucara Gaming",
+            description:
+              "Administracion de contenido y exposicion de E-Sports con una landing page dinamica",
+            technologies: [],
+            status: "En desarrollo",
+            startDate: "",
+            expectedEndDate: "",
+            progress: 0,
+          },
+          {
+            id: "PRO004",
+            team_id: "TEAM004",
+            name: "MiMap",
+            description:
+              "Mapa Interactivo para desplegar la matriz comercial y productiva del municipio de Ituzaingo",
+            technologies: ["React", "Inertia", "Laravel", "MySQL"],
+            status: "Fase 1 - Completada | Fase 2 - En relevamiento",
+            startDate: "2025-05-04",
+            expectedEndDate: "2025-11-28",
+            duration: "7 meses",
+            progress: 50,
+          },
+          {
+            id: "PRO005",
+            team_id: "TEAM005",
+            name: "FocusApp",
+            description:
+              "Plataforma web colaborativa orientada a fotografos, donde los usuarios pueden compartir sus trabajos, recibir consejos de la comunidad, participar en concursos y mejorar su tecnica mediante la retroalimentacion colectiva.",
+            technologies: ["React", "Django", "MySQL", "MongoDB"],
+            status: "En desarrollo",
+            startDate: "2025-03-19",
+            expectedEndDate: "2025-12-01",
+            duration: "8 meses",
+            progress: 45,
+          },
+        ],
+      };
+
+      // Process the data
+      document.addEventListener("DOMContentLoaded", function () {
+        // Update metadata
+        document.getElementById("version").textContent =
+          jsonData.metadata.version;
+        document.getElementById("lastUpdated").textContent =
+          jsonData.metadata.lastUpdated;
+        document.getElementById("description").textContent =
+          jsonData.metadata.description;
+
+        // Update stats
+        document.getElementById("totalStudents").textContent =
+          jsonData.students.length;
+        document.getElementById("totalTeams").textContent =
+          jsonData.teams.length;
+        document.getElementById("totalProjects").textContent =
+          jsonData.projects.length;
+
+        // Create student cards
+        const studentsGrid = document.getElementById("studentsGrid");
+        jsonData.students.forEach((student) => {
+          const studentCard = createStudentCard(student);
+          studentsGrid.appendChild(studentCard);
+        });
+
+        // Create team cards
+        const teamsGrid = document.getElementById("teamsGrid");
+        jsonData.teams.forEach((team) => {
+          const teamCard = createTeamCard(team);
+          teamsGrid.appendChild(teamCard);
+        });
+
+        // Create project cards
+        const projectsGrid = document.getElementById("projectsGrid");
+        jsonData.projects.forEach((project) => {
+          const projectCard = createProjectCard(project);
+          projectsGrid.appendChild(projectCard);
+        });
+
+        // Setup search functionality
+        setupSearch(
+          jsonData.students,
+          "searchInput",
+          "studentsGrid",
+          createStudentCard
+        );
+        setupSearch(
+          jsonData.teams,
+          "teamSearchInput",
+          "teamsGrid",
+          createTeamCard
+        );
+        setupSearch(
+          jsonData.projects,
+          "projectSearchInput",
+          "projectsGrid",
+          createProjectCard
+        );
+      });
+
+      function createStudentCard(student) {
+        const col = document.createElement("div");
+        col.className = "col-md-6 col-lg-4";
+
+        const card = document.createElement("div");
+        card.className = "student-card";
+
+        const name = `${student.personalInfo.firstName} ${student.personalInfo.lastName}`;
+        const email = student.personalInfo.email;
+        const githubUrl = student.personalInfo.githubUrl;
+        const githubUsername = student.personalInfo.githubUsername;
+
+        card.innerHTML = `
+                <div class="student-info">
+                    <div class="student-name">${name}</div>
+                    <div class="student-details">
+                        <div><i class="bi bi-person-badge me-2"></i>${student.id}</div>
+                        <div><i class="bi bi-geo-alt me-2"></i>${student.personalInfo.location}</div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="${githubUrl}" target="_blank" title="Ver perfil de GitHub">
+                        <i class="bi bi-github github-icon"></i>
+                    </a>
+                    <a href="mailto:${email}" title="Enviar correo">
+                        <i class="bi bi-envelope-fill email-icon"></i>
+                    </a>
+                </div>
+            `;
+
+        col.appendChild(card);
+        return col;
+      }
+
+      function createTeamCard(team) {
+        const col = document.createElement("div");
+        col.className = "col-md-6 col-lg-4";
+
+        const card = document.createElement("div");
+        card.className = "team-card";
+
+        // Find team members
+        const teamMembers = team.members.map((memberId) => {
+          const student = jsonData.students.find((s) => s.id === memberId);
+          return student
+            ? `${student.personalInfo.firstName} ${student.personalInfo.lastName}`
+            : memberId;
+        });
+
+        // Find associated project
+        const project = jsonData.projects.find((p) => p.id === team.project_id);
+
+        card.innerHTML = `
+                <div class="team-name">${team.name}</div>
+                <div class="team-details">
+                    <div><i class="bi bi-people me-2"></i>${
+                      teamMembers.length
+                    } miembros</div>
+                    ${
+                      project
+                        ? `<div><i class="bi bi-kanban me-2"></i>Proyecto: ${project.name}</div>`
+                        : ""
+                    }
+                </div>
+                <div class="team-members">
+                    ${teamMembers
+                      .map(
+                        (member) => `<span class="team-member">${member}</span>`
+                      )
+                      .join("")}
+                </div>
+            `;
+
+        col.appendChild(card);
+        return col;
+      }
+
+      function createProjectCard(project) {
+        const col = document.createElement("div");
+        col.className = "col-md-6 col-lg-4";
+
+        const card = document.createElement("div");
+        card.className = "project-card";
+
+        // Find associated team
+        const team = jsonData.teams.find((t) => t.id === project.team_id);
+
+        card.innerHTML = `
+                <div class="project-name">${project.name}</div>
+                <div class="project-description">${project.description}</div>
+                ${
+                  project.technologies.length > 0
+                    ? `
+                    <div class="project-tech-stack">
+                        ${project.technologies
+                          .map(
+                            (tech) =>
+                              `<span class="project-tech">${tech}</span>`
+                          )
+                          .join("")}
+                    </div>
+                `
+                    : ""
+                }
+                <div class="project-details">
+                    ${
+                      team
+                        ? `<div><i class="bi bi-people me-2"></i>Equipo: ${team.name}</div>`
+                        : ""
+                    }
+                    <div><i class="bi bi-calendar me-2"></i>Estado: ${
+                      project.status
+                    }</div>
+                    ${
+                      project.startDate
+                        ? `<div><i class="bi bi-calendar-check me-2"></i>Inicio: ${project.startDate}</div>`
+                        : ""
+                    }
+                    ${
+                      project.expectedEndDate
+                        ? `<div><i class="bi bi-calendar-x me-2"></i>Fin esperado: ${project.expectedEndDate}</div>`
+                        : ""
+                    }
+                </div>
+                ${
+                  project.progress > 0
+                    ? `
+                    <div class="project-progress">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: ${project.progress}%" 
+                                aria-valuenow="${project.progress}" aria-valuemin="0" aria-valuemax="100">
+                                ${project.progress}%
+                            </div>
+                        </div>
+                    </div>
+                `
+                    : ""
+                }
+            `;
+
+        col.appendChild(card);
+        return col;
+      }
+
+      function setupSearch(data, inputId, gridId, createCardFunction) {
+        const searchInput = document.getElementById(inputId);
+        const grid = document.getElementById(gridId);
+
+        searchInput.addEventListener("input", (e) => {
+          const searchTerm = e.target.value.toLowerCase();
+          const filteredData = data.filter((item) => {
+            if (item.name) {
+              return item.name.toLowerCase().includes(searchTerm);
+            } else if (item.personalInfo) {
+              const fullName =
+                `${item.personalInfo.firstName} ${item.personalInfo.lastName}`.toLowerCase();
+              return (
+                fullName.includes(searchTerm) ||
+                item.id.toLowerCase().includes(searchTerm)
+              );
+            }
+            return false;
+          });
+
+          // Clear and repopulate the grid
+          grid.innerHTML = "";
+          filteredData.forEach((item) => {
+            const card = createCardFunction(item);
+            grid.appendChild(card);
+          });
+        });
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

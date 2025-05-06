@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "version": "2.0.0",
+    "lastUpdated": "2025-04-23",
+    "description": "CRUI - PP3"
+  },
+  "students": [
+    {
+      "id": "STU006",
+      "personalInfo": {
+        "firstName": "Ariana",
+        "lastName": "Ruiz",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU007",
+      "personalInfo": {
+        "firstName": "Agustin",
+        "lastName": "Scklink",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU008",
+      "personalInfo": {
+        "firstName": "Aldana",
+        "lastName": "Velazquez",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU009",
+      "personalInfo": {
+        "firstName": "Sebastian",
+        "lastName": "Dipietro",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU010",
+      "personalInfo": {
+        "firstName": "Ignacio",
+        "lastName": "Trota",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    }
+  ],
+  "teams": [
+    {
+      "id": "TEAM002",
+      "name": "Hebenum",
+      "members": ["STU006", "STU007", "STU008", "STU009", "STU010"],
+      "project_id": "PRO002"
+    }
+  ],
+  "projects": [
+    {
+      "id": "PRO002",
+      "team_id": "TEAM002",
+      "name": "-------------",
+      "description": "Plataforma web relacionada a la gestion academica de alumnos, materias y profesores, con foco en resolver problematicas que se encuentran en la misma institucion.",
+      "technologies": ["Java"],
+      "status": "En desarrollo",
+      "startDate": "",
+      "expectedEndDate": "",
+      "progress": 0,
+      "offerer": ["CRUI - Personal de la institucion"],
+      "stakeHolders": [],
+
+      "history": [
+        {
+          "date": "2025-03-19",
+          "description": "Proyecto iniciado el año anterior",
+          "status": "---",
+          "time_spent": "----"
+        }
+      ]
+    }
+  ]
+}

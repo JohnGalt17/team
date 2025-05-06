@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "version": "2.0.0",
+    "lastUpdated": "2025-04-23",
+    "description": "CRUI - PP3"
+  },
+  "students": [
+    {
+      "id": "STU001",
+      "personalInfo": {
+        "firstName": "Eduardo",
+        "lastName": "Soto",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU002",
+      "personalInfo": {
+        "firstName": "Franco",
+        "lastName": "Balella",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU003",
+      "personalInfo": {
+        "firstName": "Lucas",
+        "lastName": "Muñoz",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU004",
+      "personalInfo": {
+        "firstName": "Fabio",
+        "lastName": "Gomez",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU005",
+      "personalInfo": {
+        "firstName": "Brandon",
+        "lastName": "Ayaviri",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    }
+  ],
+  "teams": [
+    {
+      "id": "TEAM001",
+      "name": "Gaming",
+      "members": ["STU001", "STU002", "STU003", "STU004", "STU005"],
+      "project_id": "PRO001"
+    }
+  ],
+  "projects": [
+    {
+      "id": "PRO001",
+      "team_id": "TEAM001",
+      "name": "----------",
+      "description": "Plataforma web|mobile para aprender jugando, con un enfoque en la gamificación y la motivación. ",
+      "technologies": [],
+      "status": "En desarrollo",
+      "startDate": "",
+      "expectedEndDate": "",
+      "progress": 0,
+      "offerer": [
+        "En busqueda de oferentes que nos puedan ayudar, teniendo en cuenta que la aplicacion va a estar analizada, diseñada y desarrollada permitiendo abarcar distintos rubros configurables."
+      ],
+      "stakeHolders": [],
+
+      "history": [
+        {
+          "date": "2025-03-19",
+          "description": "Inicio del proyecto (distintas ideas)",
+          "status": "Iniciado",
+          "time_spent": "----"
+        }
+      ]
+    }
+  ]
+}

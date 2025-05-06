@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "version": "2.0.0",
+    "lastUpdated": "2025-04-23",
+    "description": "CRUI - PP3"
+  },
+  "students": [
+    {
+      "id": "STU011",
+      "personalInfo": {
+        "firstName": "Sebastian",
+        "lastName": "Mussi",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU012",
+      "personalInfo": {
+        "firstName": "Rocio",
+        "lastName": "Lujan",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU013",
+      "personalInfo": {
+        "firstName": "Ortiz",
+        "lastName": "Ricardo",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU014",
+      "personalInfo": {
+        "firstName": "Francisco",
+        "lastName": "Castellano",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU015",
+      "personalInfo": {
+        "firstName": "Lucas",
+        "lastName": "Godina",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    }
+  ],
+  "teams": [
+    {
+      "id": "TEAM003",
+      "name": "Pucara Gaming",
+      "members": ["STU011", "STU012", "STU013", "STU014", "STU015"],
+      "project_id": "PRO003"
+    }
+  ],
+  "projects": [
+    {
+      "id": "PRO003",
+      "team_id": "TEAM003",
+      "name": "----------",
+      "description": "Administracion de contenido y exposicion de E-Sports con una landing page dinamica",
+      "technologies": [],
+      "status": "En desarrollo",
+      "startDate": "",
+      "expectedEndDate": "",
+      "progress": 0,
+      "offerer": [
+        "Oferentes: contacto a partir de un integrante del equipo que cuenta con un socio que estan comenzando el proyecto."
+      ],
+      "stakeHolders": [],
+
+      "history": [
+        {
+          "date": "2025-03-19",
+          "description": "Inicio del proyecto ",
+          "status": "Iniciado",
+          "time_spent": "----"
+        }
+      ]
+    }
+  ]
+}

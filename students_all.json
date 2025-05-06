@@ -1,0 +1,935 @@
+{
+  "metadata": {
+    "version": "2.0.0",
+    "lastUpdated": "2025-04-23",
+    "description": "CRUI - PP3"
+  },
+  "students": [
+    {
+      "id": "STU001",
+      "personalInfo": {
+        "firstName": "Eduardo",
+        "lastName": "Soto",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU002",
+      "personalInfo": {
+        "firstName": "Franco",
+        "lastName": "Balella",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU003",
+      "personalInfo": {
+        "firstName": "Lucas",
+        "lastName": "Muñoz",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU004",
+      "personalInfo": {
+        "firstName": "Fabio",
+        "lastName": "Gomez",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU005",
+      "personalInfo": {
+        "firstName": "Brandon",
+        "lastName": "Ayaviri",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU006",
+      "personalInfo": {
+        "firstName": "Ariana",
+        "lastName": "Ruiz",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU007",
+      "personalInfo": {
+        "firstName": "Agustin",
+        "lastName": "Scklink",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU008",
+      "personalInfo": {
+        "firstName": "Aldana",
+        "lastName": "Velazquez",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU009",
+      "personalInfo": {
+        "firstName": "Sebastian",
+        "lastName": "Dipietro",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU010",
+      "personalInfo": {
+        "firstName": "Ignacio",
+        "lastName": "Trota",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU011",
+      "personalInfo": {
+        "firstName": "Sebastian",
+        "lastName": "Mussi",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU012",
+      "personalInfo": {
+        "firstName": "Rocio",
+        "lastName": "Lujan",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU013",
+      "personalInfo": {
+        "firstName": "Ortiz",
+        "lastName": "Ricardo",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU014",
+      "personalInfo": {
+        "firstName": "Francisco",
+        "lastName": "Castellano",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU015",
+      "personalInfo": {
+        "firstName": "Lucas",
+        "lastName": "Godina",
+        "email": "",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "",
+        "expectedGraduation": ""
+      },
+      "skills": {
+        "programmingLanguages": [],
+        "frameworks": [],
+        "databases": [],
+        "tools": [],
+        "soft": []
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU016",
+      "personalInfo": {
+        "firstName": "Santiago",
+        "lastName": "Villanueva",
+        "email": "santiago@sharktech.com.ar",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "2022-03-01",
+        "expectedGraduation": "2024-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["Typescript", "JavaScript", "Python", "PHP"],
+        "frameworks": ["Laravel", "NestJs", "Angular", "Next.js"],
+        "databases": ["MySQL", "PostgreSQL", "MongoDB", "DynamoDB"],
+        "tools": ["Git", "VS Code", "AWS", "Firebase", "Vercel", "Notion"],
+        "soft": [
+          "Trabajo en equipo",
+          "Resolución de problemas",
+          "Adaptabilidad",
+          "Aprendizaje continuo"
+        ]
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU017",
+      "personalInfo": {
+        "firstName": "Daiana",
+        "lastName": "Rodriguez",
+        "email": "daiana@sharktech.com.ar",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "2022-03-01",
+        "expectedGraduation": "2024-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["JavaScript", "Python", "Java", "C"],
+        "frameworks": ["Laravel", "Node.js"],
+        "databases": ["MySQL", "SQL Server"],
+        "tools": ["Git", "Jira", "VS Code"],
+        "soft": [
+          "Adaptabilidad",
+          "Orientacion a desafios",
+          "Trabajo en equipo",
+          "Resolución de problemas"
+        ]
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Intermedio",
+          "certification": "First Certificate"
+        }
+      ]
+    },
+    {
+      "id": "STU018",
+      "personalInfo": {
+        "firstName": "Lourdes",
+        "lastName": "Helman",
+        "email": "lourdes@sharktech.com.ar",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "2022-03-01",
+        "expectedGraduation": "2024-12-15"
+      },
+      "skills": {
+        "programmingLanguages": [
+          "JavaScript",
+          "Python",
+          "Java",
+          "C",
+          "TypeScript"
+        ],
+        "frameworks": ["Laravel", "Node.js", "Express", "React"],
+        "databases": ["MySQL", "SQL Server", "MongoDB"],
+        "tools": ["Git", "Jira", "VS Code", "Filezilla", "Postman"],
+        "soft": [
+          "Resolución de conflictos",
+          "Versatilidad entre roles",
+          "Adaptabilidad",
+          "Mediadora de equipo",
+          "Trabajo colaborativo",
+          "Orientación a desafíos"
+        ]
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Intermedio",
+          "certification": "First Certificate"
+        }
+      ]
+    },
+    {
+      "id": "STU019",
+      "personalInfo": {
+        "firstName": "Paula",
+        "lastName": "Martínez Farías",
+        "email": "paula@sharktech.com.ar",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "2022-03-01",
+        "expectedGraduation": "2024-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["JavaScript", "Python", "Java", "C", "PHP"],
+        "frameworks": ["Laravel", "Node.js"],
+        "databases": ["MySQL", "SQL Server"],
+        "tools": ["Git", "Jira", "VS Code", "Filezilla"],
+        "soft": [
+          "Autonomía",
+          "Gestión del tiempo",
+          "Pensamiento analítico",
+          "Mentalidad de mejora contínua"
+        ]
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Intermedio",
+          "certification": "First Certificate"
+        }
+      ]
+    },
+
+    {
+      "id": "STU020",
+      "personalInfo": {
+        "firstName": "Jorge",
+        "lastName": "Marinoni",
+        "email": "jorge@sharktech.com.ar",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "2022-03-01",
+        "expectedGraduation": "2024-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["JavaScript", "Python", "Java", "C"],
+        "frameworks": ["Laravel", "Node.js"],
+        "databases": ["MySQL", "SQL Server"],
+        "tools": ["Git", "Jira", "VS Code", "Filezilla"],
+        "soft": [
+          "Proactivo",
+          "Buena oratoria",
+          "Trabajo en equipo",
+          "Resolución de problemas"
+        ]
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Intermedio",
+          "certification": "First Certificate"
+        }
+      ]
+    },
+    {
+      "id": "STU021",
+      "personalInfo": {
+        "firstName": "Jorgelina",
+        "lastName": "Galeano",
+        "email": "jmcyjg@gmail.com",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "2021-03-01",
+        "expectedGraduation": "2024-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["Python", "HTML/CSS"],
+        "frameworks": ["flask", "laravel"],
+        "databases": ["MySQL"],
+        "tools": ["Git", "VS Code", "Figma"],
+        "soft": ["Proactivo", "Buena oratoria"]
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        }
+      ]
+    },
+    {
+      "id": "STU022",
+      "personalInfo": {
+        "firstName": "Camila",
+        "lastName": "Sarmiento",
+        "email": "qaamilaa774@gmail.com",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "2021-03-01",
+        "expectedGraduation": "2024-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["JavaScript", "Python", "Java", "PHP"],
+        "frameworks": ["React", "Node.js", "Laravel", "Django", "Vue.js"],
+        "databases": ["MongoDB", "PostgreSQL", "MySQL", "SQLite"],
+        "tools": ["Git", "Docker", "VS Code"],
+        "soft": ["Proactiva", "Buena oratoria", "Autónoma", "Resolutiva"]
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Intermedio"
+        }
+      ]
+    },
+    {
+      "id": "STU023",
+      "personalInfo": {
+        "firstName": "Jazmín",
+        "lastName": "Maez",
+        "email": "maezjazmin@gmail.com",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "2023-04-03",
+        "expectedGraduation": "2025-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["JavaScript", "Python", "Java", "PHP"],
+        "frameworks": ["Flask", "Node.js", "Laravel"],
+        "databases": ["MySQL", "SQLite"],
+        "tools": ["Git", "Trello", "VS Code", "FileZilla", "XAMPP", "Figma"],
+        "soft": [
+          "Resolución de problemas",
+          "Trabajo en equipo",
+          "Adaptabilidad",
+          "Empatía"
+        ]
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Avanzado"
+        },
+        {
+          "language": "Chino",
+          "level": "Principiante"
+        }
+      ]
+    },
+    {
+      "id": "STU024",
+      "personalInfo": {
+        "firstName": "Yamila",
+        "lastName": "Morais",
+        "email": "moraisyamila@gmail.com",
+        "location": "Buenos Aires, Argentina"
+      },
+      "academicInfo": {
+        "currentYear": 3,
+        "specialization": "Desarrollo de Software",
+        "enrollmentDate": "2022-03-01",
+        "expectedGraduation": "2025-12-15"
+      },
+      "skills": {
+        "programmingLanguages": ["JavaScript", "Python", "Java"],
+        "frameworks": ["Node.js"],
+        "databases": ["MySQL"],
+        "tools": ["VS Code"],
+        "soft": [
+          "Adaptabilidad",
+          "Comunicación",
+          "Resiliencia",
+          "Creatividad",
+          "Voluntad de aprender"
+        ]
+      },
+      "languages": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Básico"
+        }
+      ]
+    }
+  ],
+  "teams": [
+    {
+      "id": "TEAM001",
+      "name": "Gaming",
+      "members": ["STU001", "STU002", "STU003", "STU004", "STU005"],
+      "project_id": "PRO001"
+    },
+    {
+      "id": "TEAM002",
+      "name": "Hebenum",
+      "members": ["STU006", "STU007", "STU008", "STU009", "STU010"],
+      "project_id": "PRO002"
+    },
+    {
+      "id": "TEAM003",
+      "name": "Pucara Gaming",
+      "members": ["STU011", "STU012", "STU013", "STU014", "STU015"],
+      "project_id": "PRO003"
+    },
+    {
+      "id": "TEAM004",
+      "name": "Sharktech",
+      "members": ["STU016", "STU017", "STU018", "STU019", "STU020"],
+      "project_id": "PRO004"
+    },
+    {
+      "id": "TEAM005",
+      "name": "FocusApp",
+      "members": ["STU021", "STU022", "STU023", "STU024"],
+      "project_id": "PRO005"
+    }
+  ],
+  "projects": [
+    {
+      "id": "PRO001",
+      "team_id": "TEAM001",
+      "name": "Gaming",
+      "description": "Plataforma web|mobile para aprender jugando, con un enfoque en la gamificación y la motivación. ",
+      "technologies": [],
+      "status": "En desarrollo",
+      "startDate": "",
+      "expectedEndDate": "",
+      "progress": 0,
+      "offerer": [
+        "En busqueda de oferentes que nos puedan ayudar, teniendo en cuenta que la aplicacion va a estar analizada, diseñada y desarrollada permitiendo abarcar distintos rubros configurables."
+      ],
+      "stakeHolders": [],
+
+      "history": [
+        {
+          "date": "2025-03-19",
+          "description": "Inicio del proyecto (distintas ideas)",
+          "status": "Iniciado",
+          "time_spent": "----"
+        }
+      ]
+    },
+    {
+      "id": "PRO002",
+      "team_id": "TEAM002",
+      "name": "Hebenum",
+      "description": "Plataforma web relacionada a la gestion academica de alumnos, materias y profesores, con foco en resolver problematicas que se encuentran en la misma institucion.",
+      "technologies": ["Java"],
+      "status": "En desarrollo",
+      "startDate": "",
+      "expectedEndDate": "",
+      "progress": 0,
+      "offerer": ["CRUI - Personal de la institucion"],
+      "stakeHolders": [],
+
+      "history": [
+        {
+          "date": "2025-03-19",
+          "description": "Proyecto iniciado el año anterior",
+          "status": "---",
+          "time_spent": "----"
+        }
+      ]
+    },
+    {
+      "id": "PRO003",
+      "team_id": "TEAM003",
+      "name": "Pucara Gaming",
+      "description": "Administracion de contenido y exposicion de E-Sports con una landing page dinamica",
+      "technologies": [],
+      "status": "En desarrollo",
+      "startDate": "",
+      "expectedEndDate": "",
+      "progress": 0,
+      "offerer": [
+        "Oferentes: contacto a partir de un integrante del equipo que cuenta con un socio que estan comenzando el proyecto."
+      ],
+      "stakeHolders": [],
+
+      "history": [
+        {
+          "date": "2025-03-19",
+          "description": "Inicio del proyecto ",
+          "status": "Iniciado",
+          "time_spent": "----"
+        }
+      ]
+    },
+    {
+      "id": "PRO004",
+      "team_id": "TEAM004",
+      "name": "MiMap",
+      "description": "Mapa Interactivo para desplegar la matriz comercial y productiva del municipio de Ituzaingó",
+      "technologies": ["React", "Inertia", "Laravel", "MySQL"],
+      "status": "Fase 1 - Completada | Fase 2 - En relevamiento",
+      "startDate": "2025-05-04",
+      "expectedEndDate": "2025-11-28",
+      "duration": "7 meses",
+      "progress": 50,
+      "offerer": [
+        "Secretaría de Desarrollo Productivo del Municipio de Ituzaingó"
+      ],
+      "stakeHolders": [
+        "Lic.Natalia Lazeri",
+        "Lic.Marcela Buyo",
+        "Lic.Verónica Corbalán"
+      ],
+
+      "history": [
+        {
+          "date": "2024-05-17",
+          "description": "Fase 1",
+          "status": "Terminada",
+          "time_spent": "350 horas"
+        },
+        {
+          "date": "2025-05-04",
+          "description": "Fase 2",
+          "status": "En relevamiento",
+          "time_spent": "0 horas"
+        }
+      ]
+    },
+    {
+      "id": "PRO005",
+      "team_id": "TEAM005",
+      "name": "FocusApp",
+      "description": "Plataforma web colaborativa orientada a fotógrafos, donde los usuarios pueden compartir sus trabajos, recibir consejos de la comunidad, participar en concursos y mejorar su técnica mediante la retroalimentación colectiva.",
+      "technologies": ["React", "Django", "MySQL", "MongoDB"],
+      "status": "En desarrollo",
+      "startDate": "2025-03-19",
+      "expectedEndDate": "2025-12-01",
+      "duration": "8 meses",
+      "progress": 45,
+      "offerer": ["La empresa"],
+      "stakeHolders": [
+        "persona1",
+        "persona2",
+        "persona3",
+        "todas las personas involucradas"
+      ],
+
+      "history": [
+        {
+          "date": "2025-03-19",
+          "description": "Inicio del proyecto",
+          "status": "Iniciado",
+          "time_spent": "100 horas"
+        },
+        {
+          "date": "2023-02-01",
+          "description": "Desarrollo de la interfaz de usuario",
+          "status": "En progreso",
+          "time_spent": "50 horas"
+        }
+      ]
+    }
+  ]
+}
